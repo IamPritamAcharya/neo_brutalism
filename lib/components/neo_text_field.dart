@@ -62,10 +62,7 @@ class NeoTextField extends StatelessWidget {
           hintStyle: TextStyle(
             color: foregroundColor?.withOpacity(0.6),
           ),
-          contentPadding: const EdgeInsets.symmetric(
-            horizontal: 16,
-            vertical: 12,
-          ),
+
         ),
       ),
     );
