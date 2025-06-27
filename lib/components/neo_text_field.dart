@@ -48,6 +48,7 @@ class NeoTextField extends StatelessWidget {
         ],
       ),
       child: TextField(
+        controller: controller, 
         cursorColor: foregroundColor,
         style: TextStyle(
           color: foregroundColor,
@@ -59,7 +60,11 @@ class NeoTextField extends StatelessWidget {
           ),
           hintText: hintText,
           hintStyle: TextStyle(
-            color: foregroundColor,
+            color: foregroundColor?.withOpacity(0.6),
+          ),
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 12,
           ),
         ),
       ),
